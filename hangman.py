@@ -35,7 +35,6 @@ def main():
     lives = int(input("Enter number of lives: "))  # user sets difficulty
     current_movie = random.choice(movies)
     current_movie = current_movie.upper()
-    print(current_movie)
     unsolved = {}
     for index, character in enumerate(current_movie):
         unsolved.setdefault(character, []).append(index)
@@ -68,7 +67,8 @@ def main():
             return 0
         print(display)
         print("Entered Values: %s" % entered_value)
-    print("You Lost")
+    print("You Neck is no more!!!!")
+    print("Write answer was: %s" % current_movie)
 
 
 main()
